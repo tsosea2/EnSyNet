@@ -1,1 +1,1 @@
-# SymEnc
+# EnSyNet
