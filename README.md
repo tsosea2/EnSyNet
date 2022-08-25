@@ -25,5 +25,5 @@ If you use this dataset, please cite our paper:
 To reproduce paper results run:
 
 ```
-sh run_experiments.sh
+sh run_ensynet_experiments.sh
 ```
