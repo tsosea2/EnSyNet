@@ -56,7 +56,7 @@ def evaluate(model, test_dataloader, criterion):
         x = {key: elem[key].to(device)
              for key in elem if key not in ['text', 'idx']}
         logits = model(x)
-        results = (logits > 0.5).type(torch.LongTensor)
+        results = (logits > 0).type(torch.LongTensor)
 
         full_predictions = full_predictions + \
             list(results.cpu().detach().numpy())
